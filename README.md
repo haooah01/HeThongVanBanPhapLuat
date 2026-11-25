@@ -662,4 +662,7 @@ Thứ tự hợp lý là:
 5. Mở rộng lần lượt sang toàn bộ các phân hệ.
 
 **Nguyên tắc cuối cùng:** Một người hoàn thành Atlas phải có khả năng đọc một văn bản pháp luật chưa từng gặp, xác định nó điều chỉnh ai, điều chỉnh vấn đề gì, có hiệu lực hay không, tìm được quy định liên quan và giải thích được cách áp dụng vào một tình huống thực tế. Đây mới là năng lực phổ cập pháp luật có thể kiểm chứng.
-## II - Global Legal Intelligence & Compliance Discovery Engine v0.1.
+
+## II - Global Legal Intelligence & Compliance Discovery Engine v0.1
+
+- **Live Portal / Documentation:** [Global Legal Intelligence & Compliance Discovery Engine v0.1](https://sites.google.com/view/legalintelligencecompliancedis)

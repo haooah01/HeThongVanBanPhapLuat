@@ -1,4 +1,4 @@
-[legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt](https://github.com/user-attachments/files/35394968/legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt)# HeThongVanBanPhapLuat
+# HeThongVanBanPhapLuat
 # **VIETNAM LEGAL KNOWLEDGE ATLAS**
 
 THH KNOWLEDGE SYSTEM · VLK-001 · VERSION 1.0.0
@@ -1040,4 +1040,4 @@ Lifecycle Statuses:
 DISCOVERED -> SOURCE-IDENTIFIED -> SOURCE-VERIFIED -> LEGAL-ANALYZED ->
 APPLICABILITY-CONFIRMED -> COMPLIANCE-MAPPED -> AUDIT-VERIFIED | REQUIRES-LEGAL-REVIEW
 ================================================================================]()
-
+[legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt](https://github.com/user-attachments/files/35394968/legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt)

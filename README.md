@@ -1,4 +1,4 @@
-# HeThongVanBanPhapLuat
+[legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt](https://github.com/user-attachments/files/35394968/legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt)# HeThongVanBanPhapLuat
 # **VIETNAM LEGAL KNOWLEDGE ATLAS**
 
 THH KNOWLEDGE SYSTEM · VLK-001 · VERSION 1.0.0
@@ -666,3 +666,378 @@ Thứ tự hợp lý là:
 ## II - Global Legal Intelligence & Compliance Discovery Engine v0.1
 
 - **Live Portal / Documentation:** [Global Legal Intelligence & Compliance Discovery Engine v0.1](https://sites.google.com/view/legalintelligencecompliancedis)
+- [Uploading legal_intelligence_compliance_discovery_engine_v0_1_bilingual_en_vi.txt…================================================================================
+LEGAL INTELLIGENCE & COMPLIANCE DISCOVERY ENGINE — v0.1 (BILINGUAL EN / VI)
+Configuration : Jurisdiction=GLOBAL; Domain=ALL; Objective=compliance; Depth=all
+Snapshot Date : 2026-11-25
+Build Status  : PHASE 0 — GLOBAL FOUNDATION SEED REGISTER (Not an exhaustive worldwide census)
+Notice        : Structured compliance & legal intelligence reference only; NOT a formal legal opinion.
+================================================================================
+
+--------------------------------------------------------------------------------
+SECTION 1: STANDARD 40-COLUMN DATA SCHEMA (C01–C40 | EXCEL COLUMNS A–AN)
+--------------------------------------------------------------------------------
+- C01 | Col A  | Record ID / Mã bản ghi
+  EN: Unique record ID for an instrument/provision entry.
+  VI: Mã định danh duy nhất cho từng văn bản hoặc điều khoản.
+
+- C02 | Col B  | Jurisdiction / Tài phán & Khu vực
+  EN: Country, supranational union, treaty system or territorial jurisdiction.
+  VI: Quốc gia, liên minh siêu quốc gia, hệ thống điều ước hoặc phạm vi tài phán.
+
+- C03 | Col C  | Legal Domain / Lĩnh vực pháp luật
+  EN: Top-level field: public, private, criminal, tax, labour, data, environment, IP, trade, etc.
+  VI: Lĩnh vực pháp luật cấp cao: công pháp, tư pháp, hình sự, thuế, lao động, dữ liệu, môi trường, SHTT, thương mại...
+
+- C04 | Col D  | Legal Subdomain / Phân ngành pháp luật
+  EN: Narrower legal subject for filtering and obligation mapping.
+  VI: Phân ngành chuyên biệt phục vụ lọc và lập ma trận nghĩa vụ.
+
+- C05 | Col E  | Instrument Type / Loại văn bản
+  EN: Charter, treaty, covenant, convention, agreement, regulation, directive, decision, protocol, etc.
+  VI: Hiến chương, công ước, hiệp ước/hiệp định, quy định, chỉ thị, quyết định, nghị định thư...
+
+- C06 | Col F  | Document Number / Số hiệu & Mã đăng ký
+  EN: Official number, treaty-series number or formal identifier.
+  VI: Số hiệu công báo, số ký hiệu điều ước UNTC/UNTS hoặc mã định danh chính thức.
+
+- C07 | Col G  | Official Title / Tên gọi chính thức
+  EN: Official legal title; preserve original title where possible.
+  VI: Tên gọi chính thức của văn bản pháp luật.
+
+- C08 | Col H  | Issuing Authority / Cơ quan ban hành & Lưu chiểu
+  EN: Legislature, executive authority, treaty body or depositary.
+  VI: Cơ quan lập pháp, hành pháp, tổ chức quốc tế hoặc cơ quan lưu chiểu.
+
+- C09 | Col I  | Promulgation Date / Ngày ban hành & Ký kết
+  EN: Adoption, signature, promulgation or enactment date; label type clearly (YYYY-MM-DD).
+  VI: Ngày thông qua, ký kết hoặc ban hành; ghi rõ bản chất mốc ngày (YYYY-MM-DD).
+
+- C10 | Col J  | Effective Date / Ngày có hiệu lực & Áp dụng
+  EN: Entry into force or application date; state-specific and phased dates must be explicit.
+  VI: Ngày có hiệu lực hoặc bắt đầu áp dụng; ghi rõ hiệu lực theo từng quốc gia hoặc từng giai đoạn.
+
+- C11 | Col K  | Expiry / Termination / Ngày hết hiệu lực & Chấm dứt
+  EN: Expiry, sunset or termination date; use 'No expiry date shown' only after checking.
+  VI: Ngày hết hiệu lực/chấm dứt hoặc ghi rõ không ghi nhận ngày hết hiệu lực sau khi kiểm tra.
+
+- C12 | Col L  | Legal Status / Tình trạng hiệu lực
+  EN: In force, not yet in force, repealed, superseded, partially in force, or status unknown / State-specific.
+  VI: Đang có hiệu lực, chưa có hiệu lực, đã bãi bỏ, thay thế, hiệu lực từng phần hoặc tùy từng quốc gia.
+
+- C13 | Col M  | Amendment History / Lịch sử sửa đổi
+  EN: Amendments, corrigenda, protocols, consolidated text and repeal history.
+  VI: Các văn bản sửa đổi, đính chính, nghị định thư, bản hợp nhất và lịch sử bãi bỏ.
+
+- C14 | Col N  | Part / Chapter / Phần & Chương
+  EN: Part or Chapter containing the provision.
+  VI: Phần hoặc Chương chứa quy định pháp lý.
+
+- C15 | Col O  | Section / Mục & Tiểu mục
+  EN: Section or subsection.
+  VI: Mục hoặc Tiểu mục nếu văn bản có phân chia này.
+
+- C16 | Col P  | Article / Điều
+  EN: Article / section / clause number, depending on legal drafting system.
+  VI: Điều (hoặc Section/Clause tùy hệ thống soạn thảo văn bản).
+
+- C17 | Col Q  | Clause / Khoản & Đoạn
+  EN: Sub-article / paragraph / subsection.
+  VI: Khoản hoặc đoạn văn bản thuộc Điều.
+
+- C18 | Col R  | Point / Điểm & Tiểu khoản
+  EN: Point / subparagraph / item.
+  VI: Điểm hoặc tiểu khoản chi tiết.
+
+- C19 | Col S  | Source Page / Số trang nguồn
+  EN: Publisher page or official PDF page only when verified; otherwise N/A.
+  VI: Chỉ ghi số trang ấn phẩm/PDF chính thức khi đã kiểm chứng; nếu không có ghi N/A.
+
+- C20 | Col T  | Source Line / Số dòng nguồn
+  EN: Published source line only when actually stable and verifiable; otherwise N/A (never invent line numbers).
+  VI: Chỉ ghi số dòng khi văn bản có đánh số dòng ổn định; nếu không có ghi N/A (không tự tạo số dòng).
+
+- C21 | Col U  | Legal Subject / Chủ thể & Đối tượng pháp lý
+  EN: Legal subject/person/object protected or regulated.
+  VI: Chủ thể, cá nhân, tổ chức hoặc đối tượng được bảo hộ hoặc điều chỉnh.
+
+- C22 | Col V  | Regulated Conduct / Hành vi bị điều chỉnh
+  EN: Conduct, activity, transaction or decision regulated.
+  VI: Hành vi, hoạt động, giao dịch hoặc quyết định chịu sự điều chỉnh.
+
+- C23 | Col W  | Compliance Obligation / Tóm tắt nghĩa vụ tuân thủ
+  EN: Short operational summary of the compliance duty.
+  VI: Tóm tắt ngắn gọn, vận hành được về nghĩa vụ tuân thủ chính.
+
+- C24 | Col X  | Official Source / Nguồn chính thức
+  EN: Direct official primary-source URL; use status page separately when needed.
+  VI: Liên kết URL nguồn sơ cấp chính thức của cơ quan lưu chiểu hoặc cơ quan ban hành.
+
+- C25 | Col Y  | Legislative Purpose / Mục đích lập pháp & Điều ước
+  EN: Legislative or treaty purpose; distinguish preamble/purpose from operative duty.
+  VI: Mục tiêu lập pháp hoặc mục tiêu điều ước; phân biệt lời mở đầu với nghĩa vụ thi hành.
+
+- C26 | Col Z  | Legal Principle / Nguyên tắc pháp lý
+  EN: Legal principles used in interpretation and application.
+  VI: Các nguyên tắc pháp lý chi phối việc diễn giải và áp dụng quy định.
+
+- C27 | Col AA | Applicability / Điều kiện & Phạm vi áp dụng
+  EN: Applicability conditions, scope thresholds, territorial triggers and exclusions.
+  VI: Điều kiện áp dụng, ngưỡng phạm vi, yếu tố kết nối lãnh thổ và trường hợp loại trừ.
+
+- C28 | Col AB | Regulated Entity / Chủ thể chịu ràng buộc
+  EN: Exact regulated/bound actor and legal role.
+  VI: Chủ thể chịu sự điều chỉnh/ràng buộc và vai trò pháp lý cụ thể.
+
+- C29 | Col AC | Rights / Quyền được tạo lập & Bảo hộ
+  EN: Rights created or protected, including conditions and limitations.
+  VI: Quyền lợi được tạo lập hoặc bảo hộ, kèm điều kiện và giới hạn.
+
+- C30 | Col AD | Obligations / Nghĩa vụ tích cực
+  EN: Positive duties/required actions.
+  VI: Các hành vi hoặc nghĩa vụ tích cực bắt buộc thực hiện.
+
+- C31 | Col AE | Prohibitions / Nghĩa vụ tiêu cực & Điều cấm
+  EN: Prohibitions and negative duties.
+  VI: Hành vi bị cấm hoặc nghĩa vụ không được thực hiện.
+
+- C32 | Col AF | Exceptions / Ngoại lệ & Bảo lưu
+  EN: Exceptions, derogations, reservations, defenses and exclusions.
+  VI: Các trường hợp ngoại lệ, đình chỉ/giảm nhẹ, bảo lưu, miễn trừ và loại trừ.
+
+- C33 | Col AG | Required Procedures / Thủ tục bắt buộc
+  EN: Practical processes required to comply.
+  VI: Quy trình hoặc thủ tục thực tế cần thực hiện để tuân thủ.
+
+- C34 | Col AH | Required Documents / Hồ sơ & Tài liệu bắt buộc
+  EN: Documents, records and approvals needed.
+  VI: Tài liệu, hồ sơ, phê duyệt hoặc sổ sách cần lập và duy trì.
+
+- C35 | Col AI | Time Constraints / Giới hạn thời gian & Thời hạn
+  EN: Deadlines, retention periods, reporting cycles and staged application.
+  VI: Thời hạn, chu kỳ báo cáo, thời hiệu, thời gian lưu trữ và lộ trình áp dụng.
+
+- C36 | Col AJ | Responsible Authority / Cơ quan có thẩm quyền
+  EN: Competent authority, regulator, court or treaty body.
+  VI: Cơ quan nhà nước, cơ quan quản lý, tòa án hoặc cơ chế giám sát có thẩm quyền.
+
+- C37 | Col AK | Legal Consequences / Hậu quả pháp lý
+  EN: Remedies, penalties and consequences; tie each to an exact basis.
+  VI: Biện pháp khắc phục, chế tài hoặc hậu quả pháp lý gắn với căn cứ cụ thể.
+
+- C38 | Col AL | Evidence Requirements / Yêu cầu bằng chứng kiểm toán
+  EN: Audit evidence required to prove compliance.
+  VI: Bằng chứng kiểm toán truy vết được để chứng minh tuân thủ.
+
+- C39 | Col AM | Cross-references / Dẫn chiếu chéo
+  EN: Related provisions, cross-references and implementing instruments.
+  VI: Điều khoản liên quan, dẫn chiếu chéo và văn bản hướng dẫn/thực thi.
+
+- C40 | Col AN | Compliance Verification / Tiêu chí kiểm chứng tuân thủ
+  EN: Testable verification procedure and pass/fail rule.
+  VI: Quy trình kiểm tra có thể kiểm chứng và tiêu chí đạt/không đạt (Pass/Fail).
+
+--------------------------------------------------------------------------------
+SECTION 2: FOUNDATION LEGAL INSTRUMENTS (INT-001..INT-012, EU-001..EU-002)
+--------------------------------------------------------------------------------
+[INT-001] Row 2 | UN Charter (I-1)
+- EN Title : Charter of the United Nations
+- VI Title : Hiến chương Liên Hợp Quốc
+- Domain   : Public international law / UN system & foundational obligations | Công pháp quốc tế / Hệ thống LHQ & nghĩa vụ nền tảng
+- Dates    : Promulgated 1945-06-26 | Effective 1945-10-24 | Expiry: No expiry date shown
+- Status   : In force; UN membership and treaty record must be checked for the relevant State | Đang có hiệu lực; kiểm tra tư cách thành viên LHQ và hồ sơ điều ước của từng quốc gia
+- Amendments: Amendments adopted in 1963, 1965 and 1973; verify consolidated text | Sửa đổi năm 1963, 1965, 1973; đối chiếu bản hợp nhất
+- Locator  : Chapters I, V, XVI | Arts. 1, 2, 25, 102, 103 | Page: N/A | Line: N/A – no stable statutory line numbers; use Article anchor
+- Duty (EN): Primarily obligations of UN Member States; not a general direct private-company code.
+- Duty (VI): Chủ yếu là nghĩa vụ của Quốc gia thành viên LHQ; không phải bộ quy tắc trực tiếp chung cho doanh nghiệp tư nhân.
+- Source   : https://treaties.un.org/Pages/ViewDetails.aspx?chapter=1&mtdsg_no=I-1&src=TREATY
+
+[INT-002] Row 3 | UNTC IV-4; registration No. 14668
+- EN Title : International Covenant on Civil and Political Rights (ICCPR)
+- VI Title : Công ước Quốc tế về các Quyền Dân sự và Chính trị (ICCPR)
+- Domain   : Human rights / Civil and political rights | Nhân quyền / Quyền dân sự và chính trị
+- Dates    : Promulgated 1966-12-16 | Effective 1976-03-23 (Art. 41 procedure 1979-03-28) | Expiry: No expiry date shown
+- Status   : In force; 175 Parties per UNTC snapshot 2026-11-25 | Đang có hiệu lực; 175 Quốc gia thành viên theo UNTC ngày 25/11/2026
+- Locator  : Part II, III | Arts. 2, 4, 17, 19, 26 | Page: N/A | Line: N/A – no stable statutory line numbers
+- Duty (EN): States Parties must respect and ensure Covenant rights and provide effective remedies within the Covenant framework.
+- Duty (VI): Quốc gia thành viên phải tôn trọng, bảo đảm các quyền theo Công ước và cung cấp biện pháp khắc phục hữu hiệu.
+- Source   : https://treaties.un.org/pages/ViewDetails.aspx?chapter=4&mtdsg_no=IV-4&src=IND
+
+[INT-003] Row 4 | UNTC IV-3; registration No. 14531
+- EN Title : International Covenant on Economic, Social and Cultural Rights (ICESCR)
+- VI Title : Công ước Quốc tế về các Quyền Kinh tế, Xã hội và Văn hóa (ICESCR)
+- Domain   : Human rights / Economic, social and cultural rights | Nhân quyền / Quyền kinh tế, xã hội và văn hóa
+- Dates    : Promulgated 1966-12-16 | Effective 1976-01-03 | Expiry: No expiry date shown
+- Status   : In force; 174 Parties in the UNTC record reviewed 2026-11-25 | Đang có hiệu lực; 174 Quốc gia thành viên theo UNTC rà soát ngày 25/11/2026
+- Locator  : Part II, III | Arts. 2, 6, 7, 11, 12 | Page: N/A | Line: N/A – no stable statutory line numbers
+- Duty (EN): States Parties must take steps, using maximum available resources, toward realization of Covenant rights.
+- Duty (VI): Quốc gia thành viên phải thực hiện các bước, sử dụng tối đa nguồn lực sẵn có, hướng tới thực hiện đầy đủ các quyền.
+- Source   : https://treaties.un.org/pages/ViewDetails.aspx?chapter=4&clang=_en&mtdsg_no=IV-3&src=TREATY
+
+[INT-004] Row 5 | UNTC IV-11; registration No. 27531
+- EN Title : Convention on the Rights of the Child (CRC)
+- VI Title : Công ước về Quyền Trẻ em (CRC)
+- Domain   : Human rights / Children's rights | Nhân quyền / Quyền trẻ em
+- Dates    : Promulgated 1989-11-20 | Effective 1990-09-02 | Expiry: No expiry date shown
+- Status   : In force; 196 Parties in UNTC record reviewed 2026-11-24 | Đang có hiệu lực; 196 Bên tham gia theo UNTC rà soát ngày 24/11/2026
+- Locator  : Parts I–III | Arts. 2, 3, 12, 19, 32 | Page: N/A | Line: N/A – no stable statutory line numbers
+- Duty (EN): States Parties must give effect to children's rights and protect children within the Convention framework.
+- Duty (VI): Quốc gia thành viên phải thực hiện quyền trẻ em và bảo vệ trẻ em trong khuôn khổ Công ước.
+- Source   : https://treaties.un.org/pages/ViewDetails.aspx?chapter=4&clang=_en&mtdsg_no=IV-11&src=TREATY
+
+[INT-005] Row 6 | UNTC XVIII-14; registration No. 42146
+- EN Title : United Nations Convention against Corruption (UNCAC)
+- VI Title : Công ước Liên Hợp Quốc chống Tham nhũng (UNCAC)
+- Domain   : Integrity / public governance — Anti-corruption and private-sector integrity | Liêm chính & quản trị công
+- Dates    : Promulgated 2003-10-31 | Effective 2005-12-14 | Expiry: No expiry date shown
+- Status   : In force; 193 Parties in UNTC record reviewed 2026-11-25 | Đang có hiệu lực; 193 Bên tham gia theo UNTC rà soát ngày 25/11/2026
+- Locator  : Chapters II, III, IV | Arts. 5, 9, 12, 15, 26 | Page: N/A | Line: N/A – no stable statutory line numbers
+- Duty (EN): States Parties implement preventive, criminalization, cooperation and asset-recovery measures; private entities may be affected by domestic implementing law.
+- Duty (VI): Quốc gia thành viên triển khai biện pháp phòng ngừa, hình sự hóa, hợp tác và thu hồi tài sản; tổ chức tư nhân chịu tác động qua luật thực thi nội địa.
+- Source   : https://treaties.un.org/pages/viewdetails.aspx?chapter=18&mtdsg_no=xviii-14&src=treaty
+
+[INT-006] Row 7 | UNTC XXI-6; registration No. 31363
+- EN Title : United Nations Convention on the Law of the Sea (UNCLOS)
+- VI Title : Công ước Liên Hợp Quốc về Luật Biển (UNCLOS)
+- Domain   : Maritime / environment — Law of the sea | Hàng hải & môi trường — Luật biển
+- Dates    : Promulgated 1982-12-10 | Effective 1994-11-16 | Expiry: No expiry date shown
+- Status   : In force; 172 Parties in UNTC record reviewed 2026-11-24 | Đang có hiệu lực; 172 Bên tham gia theo UNTC rà soát ngày 24/11/2026
+- Locator  : Parts V, XII, XVII | Arts. 56, 58, 192, 194, 308 | Page: PDF page numbering exists in official text | Line: Use Article/paragraph; do not infer line number from PDF extraction
+- Duty (EN): State obligations and jurisdictional rules; private operators are generally reached through flag/coastal State domestic law.
+- Duty (VI): Nghĩa vụ quốc gia và quy tắc tài phán; nhà khai thác tư nhân chịu chi phối chủ yếu qua luật nội địa của quốc gia tàu mang cờ hoặc ven biển.
+- Source   : https://treaties.un.org/Pages/ViewDetailsIII.aspx?chapter=21&mtdsg_no=XXI-6&src=IND
+
+[INT-007] Row 8 | CISG (Vienna, 1980)
+- EN Title : United Nations Convention on Contracts for the International Sale of Goods (CISG)
+- VI Title : Công ước Viên về Hợp đồng Mua bán Hàng hóa Quốc tế (CISG)
+- Domain   : Commercial / private law — International sale of goods | Thương mại & tư pháp quốc tế
+- Dates    : Promulgated 1980-04-11 | Effective 1988-01-01 (general; State-specific dates differ) | Expiry: No expiry date shown
+- Status   : In force for Contracting States; verify party status and entry date for each relevant State | Có hiệu lực cho các Quốc gia thành viên ký kết
+- Locator  : Parts I–IV | Arts. 1, 6, 11, 35, 38, 39, 53, 99 | Page: N/A – HTML treaty page | Line: N/A – no stable statutory line numbering
+- Duty (EN): Contracting parties must perform sale obligations if CISG applies, subject to the Convention and party autonomy.
+- Duty (VI): Các bên ký kết phải thực hiện nghĩa vụ mua bán nếu CISG áp dụng, tuân theo Công ước và quyền tự thỏa thuận của các bên.
+- Source   : https://uncitral.un.org/en/texts/salegoods/conventions/sale_of_goods/cisg/status
+
+[INT-008] Row 9 | New York Convention 1958; UNTS No. 4739
+- EN Title : Convention on the Recognition and Enforcement of Foreign Arbitral Awards
+- VI Title : Công ước New York 1958 về Công nhận và Thi hành Phán quyết Trọng tài Nước ngoài
+- Domain   : Dispute resolution — Recognition/enforcement of foreign arbitral awards | Giải quyết tranh chấp
+- Dates    : Promulgated 1958-06-10 | Effective 1959-06-07 | Expiry: No expiry date shown
+- Status   : In force for Contracting States; check State-specific reservations and implementation | Có hiệu lực cho các Quốc gia thành viên ký kết
+- Locator  : Arts. I, II, III, IV, V, VII, XII | Page: N/A – HTML/PDF source | Line: N/A – use Article locator; no stable line numbering
+- Duty (EN): Contracting States must recognize arbitration agreements and enforce covered awards subject to Convention conditions.
+- Duty (VI): Quốc gia thành viên phải công nhận thỏa thuận trọng tài và thi hành phán quyết thuộc phạm vi theo điều kiện Công ước.
+- Source   : https://uncitral.un.org/en/texts/arbitration/conventions/foreign_arbitral_awards
+
+[INT-009] Row 10 | Marrakesh Agreement (1994)
+- EN Title : Marrakesh Agreement Establishing the World Trade Organization
+- VI Title : Hiệp định Marrakesh thành lập Tổ chức Thương mại Thế giới (WTO)
+- Domain   : Trade / customs — WTO institutional and multilateral trade framework | Thương mại & hải quan
+- Dates    : Promulgated 1994-04-15 | Effective 1995-01-01 | Expiry: No expiry date shown
+- Status   : In force; amendment and membership status must be checked | Đang có hiệu lực; kiểm tra sửa đổi và tư cách thành viên
+- Locator  : Main Agreement and Annexes | Arts. II, XI, XII, XIII, XIV, XVI; Annexes 1–3 | Page: N/A | Line: N/A
+- Duty (EN): WTO Members accept obligations in the covered agreements; business effects usually arise through domestic law and trade measures.
+- Duty (VI): Thành viên WTO chấp nhận nghĩa vụ trong các hiệp định liên quan; tác động tới doanh nghiệp thường phát sinh qua luật và biện pháp thương mại nội địa.
+- Source   : https://www.wto.org/english/docs_e/legal_e/marag_e.htm
+
+[INT-010] Row 11 | WTO Agreement Annex 1C (TRIPS)
+- EN Title : Agreement on Trade-Related Aspects of Intellectual Property Rights (TRIPS)
+- VI Title : Hiệp định TRIPS về các Khía cạnh Liên quan đến Thương mại của Quyền Sở hữu Trí tuệ
+- Domain   : Intellectual property — Trade-related IP minimum standards | Sở hữu trí tuệ
+- Dates    : Promulgated 1994-04-15 | Effective 1995-01-01 (2017 amendment effective 2017-01-23 by Member acceptance) | Expiry: No expiry date shown
+- Status   : In force as WTO agreement; amended text and Member-specific acceptance must be checked | Có hiệu lực như một phần Hiệp định WTO
+- Locator  : Part II, III, V | Sections 1–7 | Arts. 9, 10, 15, 27, 41, 61 | Page: N/A | Line: N/A
+- Duty (EN): WTO Members must provide minimum IP standards; private entities are governed principally by domestic IP law.
+- Duty (VI): Thành viên WTO phải bảo đảm chuẩn mực tối thiểu về SHTT; chủ thể tư nhân chịu chi phối chủ yếu bởi luật SHTT nội địa.
+- Source   : https://www.wto.org/english/tratop_e/trips_e/legal_and_interpretive_texts_e.htm
+
+[INT-011] Row 12 | FCCC/CP/2015/10/Add.1 (Paris Agreement)
+- EN Title : Paris Agreement
+- VI Title : Thỏa thuận Paris về Biến đổi Khí hậu
+- Domain   : Environment / climate — Climate mitigation, adaptation and transparency | Môi trường & khí hậu
+- Dates    : Promulgated 2015-12-12 | Effective 2016-11-04 | Expiry: No expiry date shown
+- Status   : In force; 194 Parties per UNFCCC status page reviewed 2026-11-25 (data as of 2026-01-27) | Đang có hiệu lực; 194 Bên tham gia theo UNFCCC
+- Locator  : Arts. 2, 4, 7, 13, 21 | Page: Official text includes document page numbering | Line: Use Article/paragraph; no stable line number assigned
+- Duty (EN): Parties prepare, communicate and maintain successive NDCs and pursue domestic mitigation measures under Article 4.
+- Duty (VI): Các Bên chuẩn bị, công bố và duy trì các NDC kế tiếp nhau và thực hiện biện pháp giảm nhẹ trong nước theo Điều 4.
+- Source   : https://unfccc.int/process/the-paris-agreement/status-of-ratification
+
+[INT-012] Row 13 | ILO fundamental instruments (11 instruments; see NORMLEX)
+- EN Title : ILO Fundamental Conventions and Protocol
+- VI Title : Các Công ước và Nghị định thư Cơ bản của ILO
+- Domain   : Labour / occupational safety — Fundamental labour principles and rights | Lao động & an toàn nghề nghiệp
+- Dates    : Promulgated Various: 1930–2006; P029 adopted 2014 | Effective: Convention-specific | Expiry: Instrument-specific
+- Status   : Treaty-by-treaty and State-by-State; not one single legal status | Theo từng công ước và từng quốc gia phê chuẩn
+- Locator  : Examples: C087 Art. 2; C155 Art. 4; C182 Art. 3 | Page: N/A – NORMLEX database | Line: N/A – no stable statutory line numbering
+- Duty (EN): States are bound by conventions they ratify; employers are reached through applicable national labour law and collective agreements.
+- Duty (VI): Quốc gia bị ràng buộc bởi công ước đã phê chuẩn; người sử dụng lao động chịu chi phối qua luật lao động quốc gia và thỏa ước tập thể.
+- Source   : https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12200:0::NO:::
+
+[EU-001] Row 14 | Regulation (EU) 2016/679
+- EN Title : General Data Protection Regulation (GDPR)
+- VI Title : Quy định Chung về Bảo vệ Dữ liệu (GDPR)
+- Domain   : Data protection — Personal data processing, security and transfers | Bảo vệ dữ liệu cá nhân
+- Dates    : Promulgated 2016-04-27 | Effective/Application: 2018-05-25 application date | Expiry: No expiry date shown
+- Status   : In force / applicable from 2018-05-25; check amendments and Member State supplementary law | Đang có hiệu lực / áp dụng từ 25/05/2018
+- Locator  : Arts. 3, 5, 6, 24–25, 28, 30, 32–33, 44, 99 | Page: N/A | Line: N/A
+- Duty (EN): Controllers and processors must comply with processing principles, lawful basis, security, accountability, processor contracts and transfer rules.
+- Duty (VI): Bên kiểm soát (Controller) và bên xử lý (Processor) phải tuân thủ nguyên tắc, căn cứ pháp lý, bảo mật, trách nhiệm giải trình, DPA và chuyển dữ liệu.
+- Source   : https://eur-lex.europa.eu/eli/reg/2016/679/oj
+
+[EU-002] Row 15 | Regulation (EU) 2024/1689
+- EN Title : Artificial Intelligence Act (EU AI Act)
+- VI Title : Đạo luật Trí tuệ Nhân tạo của Liên minh Châu Âu (EU AI Act)
+- Domain   : Technology / AI governance — Risk classification, transparency, governance and phased application | Công nghệ & quản trị AI
+- Dates    : Promulgated 2024-06-13 | In force 2024-08-01; phased application under Art. 113 (consolidated text 2026-07-27 shows general application 2026-08-02 with exceptions/phases)
+- Locator  : Arts. 2, 4, 5, 6, 9–11, 13–14, 16, 26, 50, 99, 113 | Page: N/A | Line: N/A
+- Duty (EN): Identify role, screen prohibited AI practices, classify risk tier and fulfill obligations according to Art. 113 dates.
+- Duty (VI): Xác định vai trò (Provider, Deployer...), sàng lọc hành vi cấm, phân loại rủi ro và đáp ứng nghĩa vụ theo mốc ngày tại Điều 113.
+- Source   : https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27
+
+--------------------------------------------------------------------------------
+SECTION 3: PROVISION-LEVEL MAP SUMMARY (PM-0001..PM-0052)
+--------------------------------------------------------------------------------
+- PM-0001..PM-0005 (INT-005 UNCAC): Art. 5, Art. 9, Art. 12, Art. 15, Art. 26
+- PM-0006..PM-0010 (INT-006 UNCLOS): Art. 56, Art. 58, Art. 192, Art. 194, Art. 308
+- PM-0011..PM-0017 (INT-007 CISG): Art. 1, Art. 6, Art. 11, Art. 35, Art. 38, Art. 39, Art. 53
+- PM-0018..PM-0020 (INT-008 New York Convention): Art. II, Art. III, Art. V
+- PM-0021..PM-0025 (INT-009 WTO / INT-010 TRIPS): Marrakesh Art. II; TRIPS Art. 9–10, Art. 15, Art. 27, Art. 41
+- PM-0026..PM-0029 (INT-011 Paris Agreement): Art. 2, Art. 4, Art. 13, Art. 21
+- PM-0030..PM-0032 (INT-012 ILO): C087 Art. 2, C155 Art. 4, C182 Art. 3
+- PM-0033..PM-0041 (EU-001 GDPR): Art. 3, Art. 5, Art. 6, Arts. 24–25, Art. 28, Art. 30, Arts. 32–33, Art. 44, Art. 99
+- PM-0042..PM-0052 (EU-002 EU AI Act): Art. 2, Art. 4, Art. 5, Art. 6, Arts. 9–11, Arts. 13–14, Art. 16, Art. 26, Art. 50, Art. 99, Art. 113
+
+--------------------------------------------------------------------------------
+SECTION 4: OFFICIAL JURISDICTION SOURCES (SRC-001..SRC-014)
+--------------------------------------------------------------------------------
+- SRC-001 | International treaties | UN Treaty Collection | https://treaties.un.org/
+- SRC-002 | International trade/IP | WTO Legal Texts | https://www.wto.org/english/docs_e/legal_e/legal_e.htm
+- SRC-003 | International commerce/arbitration | UNCITRAL Texts & Status | https://uncitral.un.org/en/texts
+- SRC-004 | Labour | ILO NORMLEX | https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12200:0::NO:::
+- SRC-005 | Climate/environment | UNFCCC / Paris Agreement | https://unfccc.int/process/the-paris-agreement
+- SRC-006 | EU law | EUR-Lex | https://eur-lex.europa.eu/
+- SRC-007 | United States — Federal | United States Code / OLRC | https://uscode.house.gov/
+- SRC-008 | United States — Federal regulations | eCFR | https://www.ecfr.gov/
+- SRC-009 | United Kingdom | legislation.gov.uk | https://www.legislation.gov.uk/
+- SRC-010 | Canada — Federal | Justice Laws Website | https://laws.justice.gc.ca/eng/
+- SRC-011 | Australia — Commonwealth | Federal Register of Legislation | https://www.legislation.gov.au/
+- SRC-012 | India | India Code | https://www.indiacode.nic.in/indiacode/home.jsp
+- SRC-013 | South Africa | South African Government — Acts | https://www.gov.za/documents/acts
+- SRC-014 | Viet Nam | Cơ sở dữ liệu quốc gia về văn bản pháp luật (VBPL) | https://vbpl.vn/
+
+--------------------------------------------------------------------------------
+SECTION 5: 17 COMPLIANCE CONTROL GATES (CC-01..CC-17) & STATUSES
+--------------------------------------------------------------------------------
+Control Gates:
+CC-01 Jurisdiction resolved | CC-02 Actor and role resolved | CC-03 Territorial nexus tested
+CC-04 Treaty party status checked | CC-05 Hierarchy/type verified | CC-06 Primary text captured
+CC-07 Amendment history reviewed | CC-08 Effective-date phase reviewed | CC-09 Provision located
+CC-10 Line/page handled correctly | CC-11 Applicability test documented | CC-12 Obligation operationalized
+CC-13 Penalty and remedy verified | CC-14 Subnational law checked | CC-15 Audit evidence retained
+CC-16 Change monitoring active | CC-17 Legal review gate passed
+
+Lifecycle Statuses:
+DISCOVERED -> SOURCE-IDENTIFIED -> SOURCE-VERIFIED -> LEGAL-ANALYZED ->
+APPLICABILITY-CONFIRMED -> COMPLIANCE-MAPPED -> AUDIT-VERIFIED | REQUIRES-LEGAL-REVIEW
+================================================================================]()
+
